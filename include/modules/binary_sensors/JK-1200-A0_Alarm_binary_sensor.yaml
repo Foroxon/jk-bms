@@ -182,13 +182,13 @@
   register_type: holding
   bitmask: 0x0008
 
-- platform: modbus_controller
-  modbus_controller_id: ${modbus_contr_id}
-  name: "${name} Please modify the authorization password in time"
-  address: 0x1200
-  offset: 0x00A0
-  register_type: holding
-  bitmask: 0x0010
+# - platform: modbus_controller
+#   modbus_controller_id: ${modbus_contr_id}
+#   name: "${name} Please modify the authorization password in time"
+#   address: 0x1200
+#   offset: 0x00A0
+#   register_type: holding
+#   bitmask: 0x0010
 
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
@@ -206,13 +206,13 @@
   register_type: holding
   bitmask: 0x0040
 
-- platform: modbus_controller
-  modbus_controller_id: ${modbus_contr_id}
-  name: "${name} Temperature sensor abnormality"
-  address: 0x1200
-  offset: 0x00A0
-  register_type: holding
-  bitmask: 0x0080
+# - platform: modbus_controller
+#   modbus_controller_id: ${modbus_contr_id}
+#   name: "${name} Temperature sensor abnormality"
+#   address: 0x1200
+#   offset: 0x00A0
+#   register_type: holding
+#   bitmask: 0x0080
 
 # - platform: modbus_controller
 #   modbus_controller_id: ${modbus_contr_id}
