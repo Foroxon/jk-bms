@@ -18,3 +18,42 @@
               (hours ? to_string(hours) + "h " : "") + (minutes ? to_string(minutes) + "m" : "");
     }
     return value;
+
+- platform: template
+  name: "${name} Alarm"
+  icon: mdi:alert-circle
+  update_interval: 5s
+  lambda: |-
+    std::string alarms = "";
+    if (id(alarm_wire_res).state) alarms += "Balance line resistance too large\n";
+    if (id(alarm_mos_otp).state) alarms += "MOS over temperature protection\n";
+    if (id(alarm_cell_quantity).state) alarms += "Number of cells mismatch\n";
+    if (id(alarm_cur_sensor_err).state) alarms += "Current sensor abnormality\n";
+    if (id(alarm_cell_ovp).state) alarms += "Single cell overvoltage protection\n";
+    if (id(alarm_bat_ovp).state) alarms += "Battery overvoltage protection\n";
+    if (id(alarm_ch_ocp).state) alarms += "Charging overcurrent protection\n";
+    if (id(alarm_ch_scp).state) alarms += "Charging short circuit protection\n";
+    if (id(alarm_ch_otp).state) alarms += "Charging over-temperature protection\n";
+    if (id(alarm_ch_utp).state) alarms += "Charging low temperature protection\n";
+    if (id(alarm_cpu_aux_commu_err).state) alarms += "Internal communication abnormality\n";
+    if (id(alarm_cell_uvp).state) alarms += "Cell undervoltage protection\n";
+    if (id(alarm_bat_uvp).state) alarms += "Battery undervoltage protection\n";
+    if (id(alarm_dch_ocp).state) alarms += "Discharge overcurrent protection\n";
+    if (id(alarm_dch_scp).state) alarms += "Discharge short circuit protection\n";
+    if (id(alarm_dch_otp).state) alarms += "Discharge over-temperature protection\n";
+    if (id(alarm_charge_mos).state) alarms += "Charging tube abnormality\n";
+    if (id(alarm_discharge_mos).state) alarms += "Discharge tube abnormality\n";
+    if (id(alarm_gps_disconnected).state) alarms += "GPS disconnected\n";
+    if (id(alarm_modify_pwd).state) alarms += "Please modify the authorization password in time\n";
+    if (id(alarm_bat_over_temp).state) alarms += "Battery over-temperature alarm\n";
+    if (id(alarm_temp_sensor).state) alarms += "Temperature sensor abnormality\n";
+    
+    if (alarms.empty()) {
+      return std::string("No alarms");
+    } else {
+      // Remove trailing newline
+      if (!alarms.empty() && alarms.back() == '\n') {
+        alarms.pop_back();
+      }
+      return alarms;
+    }
