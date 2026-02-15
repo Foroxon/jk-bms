@@ -16,6 +16,7 @@
 
 - platform: template
   name: "${name} Heating switch"
+  icon: mdi:radiator
   # optimistic: true
   lambda: |-
     uint16_t CfgSwB = id(CfgSw).state;
@@ -49,6 +50,7 @@
 
 - platform: template
   name: "${name} Disable temperature sensor"
+  icon: mdi:thermometer-off
   # optimistic: true
   lambda: |-
     uint16_t CfgSwB = id(CfgSw).state;
@@ -145,6 +147,7 @@
 
 - platform: template
   name: "${name} Display always on"
+  icon: mdi:monitor
   # optimistic: true
   lambda: |-
     uint16_t CfgSwB = id(CfgSw).state;
@@ -207,6 +210,7 @@
 
 - platform: template
   name: "${name} Smart sleep"
+  icon: mdi:sleep
   # optimistic: true
   lambda: |-
     uint16_t CfgSwB = id(CfgSw).state;
@@ -238,6 +242,7 @@
 
 - platform: template
   name: "${name} Disable PCL Module"
+  icon: mdi:chip-off
   # optimistic: true
   lambda: |-
     uint16_t CfgSwB = id(CfgSw).state;
@@ -269,6 +274,7 @@
 
 - platform: template
   name: "${name} Data timing storage"
+  icon: mdi:database-clock-outline
   # optimistic: true
   lambda: |-
     uint16_t CfgSwB = id(CfgSw).state;
@@ -300,6 +306,7 @@
 
 - platform: template
   name: "${name} Charging floating mode"
+  icon: mdi:waves
   # optimistic: true
   lambda: |-
     uint16_t CfgSwB = id(CfgSw).state;

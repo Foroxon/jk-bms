@@ -3,6 +3,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Emergency switch time"             # TimeEmergency
+  icon: mdi:clock-outline
   # address: 0x12D4
   # address: 0x1200
   # offset: 0x00D4
@@ -24,6 +25,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Discharge current correction factor"   # BatDisCurCorrect
+  icon: mdi:tune
   # address: 0x12D6
   # address: 0x1200
   # offset: 0x00D6
@@ -39,6 +41,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Charging current sensor voltage"   # VolChargCur
+  icon: mdi:flash
   # address: 0x12D8
   # address: 0x1200
   # offset: 0x00D8
@@ -55,6 +58,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Discharge current sensor voltage"   # VolDischargCur
+  icon: mdi:flash
   # address: 0x12DA
   # address: 0x1200
   # offset: 0x00DA
@@ -70,6 +74,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery voltage correction factor"   # BatVolCorrect
+  icon: mdi:tune
   # address: 0x12DC
   # address: 0x1200
   # offset: 0x00DC
@@ -84,6 +89,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery voltage"   # BatVol
+  icon: mdi:flash
   # address: 0x12E4
   # address: 0x1200
   # offset: 0x00E4
@@ -103,6 +109,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Heating current"   # HeatCurrent
+  icon: mdi:current-dc
   # address: 0x12E6
   # address: 0x1200
   # offset: 0x00E6
@@ -137,6 +144,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Charger status"    # ChargerPlugged
+  icon: mdi:power-plug
   # address: 0x12EE
   # address: 0x1200
   # offset: 0x00EE
@@ -155,6 +163,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} System beat"
+  icon: mdi:clock-outline
   # address: 0x12F0
   # address: 0x1200
   # offset: 0x00F0
@@ -178,6 +187,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery temperature 3"   # TempBat3
+  icon: mdi:thermometer
   # address: 0x12F8
   # address: 0x1200
   # offset: 0x00F8
@@ -195,6 +205,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery temperature 4"   # TempBat4
+  icon: mdi:thermometer
   # address: 0x12FA
   # address: 0x1200
   # offset: 0x00FA
@@ -212,6 +223,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery temperature 5"   # TempBat5
+  icon: mdi:thermometer
   # address: 0x12FC
   # address: 0x1200
   # offset: 0x00FC

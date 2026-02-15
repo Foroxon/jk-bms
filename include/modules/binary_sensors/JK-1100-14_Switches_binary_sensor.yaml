@@ -14,6 +14,7 @@
     #                            RW  Discharge OCP 3                                     DischargeOCP3           1: open; 0: close BIT13
 - platform: template
   name: "${name} DRY ARM Intermittent"
+  icon: mdi:pulse
   # optimistic: true
   lambda: |-
     uint16_t CfgSwB = id(CfgSw).state;
@@ -41,6 +42,7 @@
 
 - platform: template
   name: "${name} Discharge OCP 2"
+  icon: mdi:shield-alert
   # optimistic: true
   lambda: |-
     uint16_t CfgSwB = id(CfgSw).state;
@@ -68,6 +70,7 @@
 
 - platform: template
   name: "${name} Discharge OCP 3"
+  icon: mdi:shield-alert
   # optimistic: true
   lambda: |-
     uint16_t CfgSwB = id(CfgSw).state;

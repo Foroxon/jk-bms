@@ -27,6 +27,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Intelligent sleep time control enable"      #
+  icon: mdi:sleep
   id: TIMSmartSleepENS
   address: 0x1118
   # address: 0x1100

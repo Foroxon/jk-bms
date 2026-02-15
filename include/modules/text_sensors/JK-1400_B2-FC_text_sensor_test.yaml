@@ -28,6 +28,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Serial port 1 protocol control string"   # UART1MPRTOLEnable
+  icon: mdi:serial-port
   id: UART1MPRTOLEnableS
   address: 0x14B4
   # address: 0x14B4       

@@ -1,6 +1,7 @@
   # *  0x0070  112 UINT32  4   RW  Charging switch                                     BatChargeEN             1: open; 0: close      switch
 - platform: template
   name: "${name} Charging switch"
+  icon: mdi:battery-charging
   # optimistic: true
   lambda: |-
     uint32_t BatChargeENB = id(BatChargeEN).state;
@@ -33,6 +34,7 @@
   # *  0x0074  116 UINT32  4   RW  Discharge switch                                    BatDisChargeEN          1: open; 0: close      switch
 - platform: template
   name: "${name} Discharge switch"
+  icon: mdi:battery-arrow-down
   # optimistic: true
   lambda: |-
     uint32_t BatDisChargeENB = id(BatDisChargeEN).state;
@@ -65,6 +67,7 @@
   # *  0x0078  120 UINT32  4   RW  Balance switch                                      BalanEN                 1: open; 0: close      switch
 - platform: template
   name: "${name} Balance switch"
+  icon: mdi:scale-balance
   # optimistic: true
   lambda: |-
     uint32_t BalanENB = id(BalanEN).state;

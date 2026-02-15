@@ -46,6 +46,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Serial port 1 protocol control"   # UART1MPRTOLEnable
+  icon: mdi:serial-port
   # id: UART1MPRTOLEnable
   address: 0x14B4
   # address: 0x14B4       
@@ -72,6 +73,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Serial port 2 protocol control"                            # UART2MPRTOLEnable
+  icon: mdi:serial-port
   id: UART2MPRTOLEnableS
   address: 0x14D4
   # address: 0x14B4
@@ -117,6 +119,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} UART protocol library version"                            # UARTMPTLVer
+  icon: mdi:information-outline
   id: UARTMPTLVerS
   address: 0x14E6
   # address: 0x14B4

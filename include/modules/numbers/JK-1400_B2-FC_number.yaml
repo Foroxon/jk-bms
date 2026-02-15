@@ -69,6 +69,7 @@
 
 - platform: template
   name: "${name} Serial port 1 protocol"   # UART1MPRTOLNbr
+  icon: mdi:serial-port
   min_value: 0
   max_value: 15
   # multiply: 10
@@ -86,6 +87,7 @@
 
 - platform: template
   name: "${name} CAN protocol"   # CANMPRTOLNbr
+  icon: mdi:serial-port
   min_value: 0
   max_value: 12
   # multiply: 10
@@ -142,6 +144,7 @@
 
 - platform: template
   name: "${name} Serial port 2 protocol"   # UART2MPRTOLNbr
+  icon: mdi:serial-port
   min_value: 0
   max_value: 15
   # multiply: 10
@@ -188,6 +191,7 @@
 
 - platform: template
   name: "${name} LCD buzzer trigger source"   # LCDBuzzerTrigger
+  icon: mdi:bell-outline
   min_value: 0
   max_value: 12
   # multiply: 10
@@ -205,6 +209,7 @@
 
 - platform: template
   name: "${name} Dry node 1 trigger source"   # RCVTime
+  icon: mdi:tune-variant
   min_value: 0
   max_value: 12
   # multiply: 10
@@ -235,6 +240,7 @@
 
 - platform: template
   name: "${name} Dry node 2 trigger source"   # DRY2Trigger
+  icon: mdi:tune-variant
   min_value: 0
   max_value: 12
   # multiply: 10
@@ -254,6 +260,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} LCD buzzer trigger value"      # LCDBuzzerTriggerVal
+  icon: mdi:bell-outline
   address: 0x14E8
   register_type: holding
   value_type: S_DWORD
@@ -267,6 +274,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} LCD buzzer recovery value"      # LCDBuzzerReleaseVal
+  icon: mdi:bell-outline
   address: 0x14EC
   register_type: holding
   value_type: S_DWORD
@@ -280,6 +288,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Dry node 1 trigger value"      # DRY1TriggerVal
+  icon: mdi:tune-variant
   address: 0x14F0
   register_type: holding
   value_type: S_DWORD
@@ -293,6 +302,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Dry node 1 trigger recovery value"      # DRY1ReleaseVal
+  icon: mdi:tune-variant
   address: 0x14F4
   register_type: holding
   value_type: S_DWORD
@@ -306,6 +316,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Dry node 2 trigger value"      # DRY2TriggerVal
+  icon: mdi:tune-variant
   address: 0x14F8
   register_type: holding
   value_type: S_DWORD
@@ -319,6 +330,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Dry node 2 trigger recovery value"      # DRY2ReleaseVal
+  icon: mdi:tune-variant
   address: 0x14FC
   register_type: holding
   value_type: S_DWORD

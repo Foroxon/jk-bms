@@ -29,6 +29,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Accumulated running time"   # ODDRunTime
+  icon: mdi:clock-outline
   id: ODDRunTime
   # address: 0x1420
   address: 0x1400       # it's working because full set of registers is read in text_sensor
@@ -45,6 +46,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Power-on times"                            # PWROnTimes
+  icon: mdi:counter
   # address: 0x1424
   address: 0x1400
   offset: 0x0024

@@ -87,6 +87,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Entering sleep voltage"     # VolSmartSleep
+  icon: mdi:flash
   # id: VolSmartSleep
   address: 0x1000
   # register_count: 0x1A
@@ -105,6 +106,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Cell undervoltage protection"     # VolCellUV
+  icon: mdi:flash
   # id: VolCellUV
   address: 0x1004
   # address: 0x1000
@@ -122,6 +124,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Cell undervoltage protection recovery"     # VolCellUVPR
+  icon: mdi:flash
   # id: VolCellUVPR
   address: 0x1008
   # address: 0x1000
@@ -139,6 +142,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Cell overcharge protection"     # VolCellOV
+  icon: mdi:flash
   # id: VolCellOV
   address: 0x100C
   # address: 0x1000
@@ -156,6 +160,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Cell overcharge protection recovery voltage"     # VolCellOVPR
+  icon: mdi:flash
   # id: VolCellOVPR
   address: 0x1010
   # address: 0x1000
@@ -173,6 +178,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Trigger balanced voltage difference"     # VolBalanTrig
+  icon: mdi:flash
   # id: VolBalanTrig
   address: 0x1014
   # address: 0x1000
@@ -193,6 +199,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} SOC-100% voltage"     # VolSOC100
+  icon: mdi:flash
   # id: VolSOC100
   address: 0x1018
   # address: 0x1000
@@ -210,6 +217,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} SOC-0% voltage"     # VolSOC0
+  icon: mdi:flash
   # id: VolSOC0
   address: 0x101C
   # address: 0x1000
@@ -227,6 +235,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Recommended charging voltage"     # VolCellRCV
+  icon: mdi:flash
   # id: VolCellRCV
   address: 0x1020
   # address: 0x1000
@@ -244,6 +253,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Float charge voltage"     # VolCellRFV
+  icon: mdi:flash
   # id: VolCellRFV
   address: 0x1024
   # address: 0x1000
@@ -261,6 +271,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Automatic shutdown voltage"     # VolSysPwrOff
+  icon: mdi:flash
   # id: VolSysPwrOff
   address: 0x1028
   # address: 0x1000
@@ -278,6 +289,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Continuous charging current"     # CurBatCOC
+  icon: mdi:current-dc
   # id: CurBatCOC
   address: 0x102C
   # address: 0x1000
@@ -295,6 +307,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Charge overcurrent protection delay"     # TIMBatCOCPDly
+  icon: mdi:timer-outline
   # id: TIMBatCOCPDly
   address: 0x1030
   # address: 0x1000
@@ -309,6 +322,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Charge overcurrent protection release"     # TIMBatCOCPRDly
+  icon: mdi:timer-outline
   # id: TIMBatCOCPRDly
   address: 0x1034
   # address: 0x1000
@@ -323,6 +337,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Continuous discharge current"     # CurBatDcOC
+  icon: mdi:current-dc
   # id: CurBatDcOC
   address: 0x1038
   # address: 0x1000
@@ -340,6 +355,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Discharge overcurrent protection delay"     # TIMBatDcOCPDly
+  icon: mdi:timer-outline
   # id: TIMBatDcOCPDly
   address: 0x103C
   # address: 0x1000
@@ -354,6 +370,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Discharge overcurrent protection release"     # TIMBatDcOCPRDly
+  icon: mdi:timer-outline
   # id: TIMBatDcOCPRDly
   address: 0x1040
   # address: 0x1000
@@ -368,6 +385,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Short circuit protection release"     # TIMBatSCPRDly
+  icon: mdi:timer-outline
   # id: TIMBatSCPRDly
   address: 0x1044
   # address: 0x1000
@@ -382,6 +400,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Maximum balancing current"     # CurBalanMax
+  icon: mdi:current-dc
   # id: CurBalanMax
   address: 0x1048
   # address: 0x1000
@@ -399,6 +418,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Charging over-temperature protection"     # TMPBatCOT
+  icon: mdi:thermometer
   # id: TMPBatCOT
   address: 0x104C
   # address: 0x1000
@@ -416,6 +436,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Charge over temperature recovery"     # TMPBatCOTPR
+  icon: mdi:thermometer
   # id: TMPBatCOTPR
   address: 0x1050
   # address: 0x1000
@@ -433,6 +454,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Discharge over temperature protection"     # TMPBatDcOT
+  icon: mdi:thermometer
   # id: TMPBatDcOT
   address: 0x1054
   # address: 0x1000
@@ -450,6 +472,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Discharge over temperature recovery"     # TMPBatDcOTPR
+  icon: mdi:thermometer
   # id: TMPBatDcOTPR
   address: 0x1058
   # address: 0x1000
@@ -467,6 +490,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Charging low temperature protection"     # TMPBatCUT
+  icon: mdi:thermometer
   # id: TMPBatCUT
   address: 0x105C
   # address: 0x1000
@@ -484,6 +508,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Charging low temperature recovery"     # TMPBatCUTPR
+  icon: mdi:thermometer
   # id: TMPBatCUTPR
   address: 0x1060
   # address: 0x1000
@@ -501,6 +526,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} MOS over temperature protection"     # TMPMosOT
+  icon: mdi:thermometer
   # id: TMPMosOT
   address: 0x1064
   # address: 0x1000
@@ -518,6 +544,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} MOS over temperature protection recovery"     # TMPMosOTPR
+  icon: mdi:thermometer
   # id: TMPMosOTPR
   address: 0x1068
   # address: 0x1000
@@ -535,6 +562,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} CellCount"
+  icon: mdi:counter
   # id: CellCount
   address: 0x106C
   register_type: holding

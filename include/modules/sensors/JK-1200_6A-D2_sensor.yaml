@@ -229,6 +229,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} mosfet temperature"
+  icon: mdi:thermometer
   address: 0x1200
   offset: 0x008A
   register_type: holding
@@ -245,6 +246,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Balance line resistance status"   # CellWireResSta
+  icon: mdi:information-outline
   # address: 0x128C
   address: 0x1200
   offset: 0x008C
@@ -258,6 +260,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Total battery voltage"   # BatVol
+  icon: mdi:flash
   # address: 0x1290
   address: 0x1200
   offset: 0x0090
@@ -275,6 +278,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery power"   # BatWatt
+  icon: mdi:flash-outline
   # address: 0x1294
   address: 0x1200
   offset: 0x0094
@@ -292,6 +296,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery current"   # BatCurrent
+  icon: mdi:current-dc
   # address: 0x1298
   address: 0x1200
   offset: 0x0098
@@ -311,6 +316,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery temperature 1"   # TempBat1
+  icon: mdi:thermometer
   # address: 0x129C
   address: 0x1200
   offset: 0x009C
@@ -326,6 +332,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery temperature 2"   # TempBat1
+  icon: mdi:thermometer
   # address: 0x129E
   address: 0x1200
   offset: 0x009E
@@ -366,6 +373,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} AlarmBitmask"
+  icon: mdi:alert-circle-outline
   address: 0x1200
   offset: 0x00A0
   register_type: holding
@@ -376,6 +384,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Balancing current"   # BalanCurrent
+  icon: mdi:current-dc
   # address: 0x12A4
   address: 0x1200
   offset: 0x00A4
@@ -396,6 +405,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Balancing state"     # BalanSta
+  icon: mdi:scale-balance
   # address: 0x12A6
   address: 0x1200
   offset: 0x00A6
@@ -411,7 +421,8 @@
 
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
-  name: "${name} Remaining power"    # SOCStateOfcharge
+  name: "${name} State of Charge"    # SOCStateOfcharge
+  icon: mdi:battery-70
   # address: 0x12A6
   address: 0x1200
   offset: 0x00A6
@@ -431,6 +442,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Remaining capacity"     # SOCCapRemain
+  icon: mdi:battery-charging
   # address: 0x12A8
   address: 0x1200
   offset: 0x00A8
@@ -448,6 +460,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Actual battery capacity"     # SOCFullChargeCap
+  icon: mdi:battery-charging
   # address: 0x12AC
   address: 0x1200
   offset: 0x00AC
@@ -456,7 +469,7 @@
   unit_of_measurement: "Ah"
   device_class: energy_storage
   state_class: measurement
-  accuracy_decimals: 3
+  accuracy_decimals: 0
   filters:
     - multiply: 0.001
 
@@ -465,6 +478,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Number of cycles"        # SOCCycleCount
+  icon: mdi:counter
   # address: 0x12B0
   address: 0x1200
   offset: 0x00B0
@@ -478,6 +492,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Total cycle capacity"     # SOCCycleCap
+  icon: mdi:battery-charging
   # address: 0x12B4
   address: 0x1200
   offset: 0x00B4
@@ -497,6 +512,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} SOH estimate"        # SOCSOH
+  icon: mdi:battery-heart-variant
   # address: 0x12B8
   address: 0x1200
   offset: 0x00B8
@@ -512,6 +528,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Pre-charge status"    # Precharge   1: open; 0: close
+  icon: mdi:battery-charging-outline
   # address: 0x12B8
   address: 0x1200
   offset: 0x00B8
@@ -530,6 +547,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} User layer alarm"     # UserAlarm
+  icon: mdi:alert-circle-outline
   # address: 0x12BA
   address: 0x1200
   offset: 0x00BA
@@ -542,6 +560,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} total runtime in seconds"
+  icon: mdi:clock-outline
   # address: 0x12BC
   address: 0x1200
   offset: 0x00BC
@@ -560,6 +579,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Charge status"     # Charge
+  icon: mdi:battery-charging-wireless
   # address: 0x12C0
   address: 0x1200
   offset: 0x00C0
@@ -575,6 +595,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Discharge status"    # Discharge
+  icon: mdi:battery-minus
   # address: 0x12C0
   address: 0x1200
   offset: 0x00C0
@@ -593,6 +614,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} User layer alarm 2"     # UserAlarm
+  icon: mdi:alert-circle-outline
   # address: 0x12C2
   address: 0x1200
   offset: 0x00C2
@@ -606,6 +628,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Discharge overcurrent protection release time"     # TimeDcOCPR
+  icon: mdi:clock-outline
   # address: 0x12CC
   address: 0x1200
   offset: 0x00CC
@@ -619,6 +642,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Discharge short circuit protection release time"     # TimeDcSCPR
+  icon: mdi:clock-outline
   # address: 0x12CC
   address: 0x1200
   offset: 0x00CC
@@ -632,6 +656,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Charging overcurrent protection release time"     # TimeCOCPR
+  icon: mdi:clock-outline
   # address: 0x12C8
   address: 0x1200
   offset: 0x00C8
@@ -645,6 +670,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Charging short circuit protection release time"     # TimeCSCPR
+  icon: mdi:clock-outline
   # address: 0x12CA
   address: 0x1200
   offset: 0x00CA
@@ -658,6 +684,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Single undervoltage protection release time"     # TimeUVPR
+  icon: mdi:clock-outline
   # address: 0x12CC
   address: 0x1200
   offset: 0x00CC
@@ -671,6 +698,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Single overvoltage protection release time"     # TimeOVPR
+  icon: mdi:clock-outline
   # address: 0x12CE
   address: 0x1200
   offset: 0x00CE
@@ -691,6 +719,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} AbsentBitmask"
+  icon: mdi:information-outline
   address: 0x1200
   offset: 0x00D0
   register_type: holding

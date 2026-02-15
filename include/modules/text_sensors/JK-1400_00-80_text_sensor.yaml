@@ -53,6 +53,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Manufacturer model"
+  icon: mdi:factory
   skip_updates: 2
   address: 0x1400
   offset: 0x0000
@@ -68,6 +69,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Hardware version"
+  icon: mdi:chip
   skip_updates: 2
   # address: 0x1410
   address: 0x1400
@@ -80,6 +82,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Software version"
+  icon: mdi:update
   skip_updates: 2
   # address: 0x1418
   address: 0x1400
@@ -120,6 +123,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Bluetooth name"
+  icon: mdi:bluetooth
   skip_updates: 2
   # address: 0x1428
   address: 0x1400
@@ -133,6 +137,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Bluetooth PIN"
+  icon: mdi:shield-key
   skip_updates: 2
   # address: 0x1438
   address: 0x1400
@@ -145,6 +150,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} First On Date"
+  icon: mdi:calendar-star
   skip_updates: 2
   # address: 0x1448
   address: 0x1400
@@ -157,6 +163,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Serial No"
+  icon: mdi:barcode
   skip_updates: 2
   # address: 0x1450
   address: 0x1400
@@ -169,6 +176,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} User Private Data"
+  icon: mdi:folder-key
   skip_updates: 2
   # address: 0x1460
   address: 0x1400
@@ -181,6 +189,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Password"
+  icon: mdi:lock
   skip_updates: 2
   # address: 0x1470
   address: 0x1400
@@ -193,6 +202,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} User Data 2"
+  icon: mdi:database
   skip_updates: 2
   # address: 0x1480
   address: 0x1400

@@ -25,6 +25,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Balance line resistance is too large"
+  icon: mdi:omega
   address: 0x1200
   offset: 0x00A2
   register_type: holding
@@ -33,6 +34,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} MOS over temperature protection"
+  icon: mdi:thermometer-alert
   address: 0x1200
   offset: 0x00A2
   register_type: holding
@@ -41,6 +43,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} The number of cells does not match the set value"
+  icon: mdi:counter
   address: 0x1200
   offset: 0x00A2
   register_type: holding
@@ -49,6 +52,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Current sensor abnormality"
+  icon: mdi:current-dc
   address: 0x1200
   offset: 0x00A2
   register_type: holding
@@ -57,6 +61,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Single cell overvoltage protection"
+  icon: mdi:flash-alert
   address: 0x1200
   offset: 0x00A2
   register_type: holding
@@ -65,6 +70,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery overvoltage protection"
+  icon: mdi:flash-alert
   address: 0x1200
   offset: 0x00A2
   register_type: holding
@@ -73,6 +79,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Charging overcurrent protection"
+  icon: mdi:current-dc
   address: 0x1200
   offset: 0x00A2
   register_type: holding
@@ -81,6 +88,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Charging short circuit protection"
+  icon: mdi:flash-triangle
   address: 0x1200
   offset: 0x00A2
   register_type: holding
@@ -89,6 +97,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Charging over-temperature protection"
+  icon: mdi:thermometer-alert
   address: 0x1200
   offset: 0x00A2
   register_type: holding
@@ -97,6 +106,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Charging low temperature protection"
+  icon: mdi:snowflake-alert
   address: 0x1200
   offset: 0x00A2
   register_type: holding
@@ -105,6 +115,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Internal communication abnormality"
+  icon: mdi:alert-circle-outline
   address: 0x1200
   offset: 0x00A2
   register_type: holding
@@ -113,6 +124,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Cell undervoltage protection"
+  icon: mdi:flash-alert
   address: 0x1200
   offset: 0x00A2
   register_type: holding
@@ -121,6 +133,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery undervoltage protection"
+  icon: mdi:flash-alert
   address: 0x1200
   offset: 0x00A2
   register_type: holding
@@ -129,6 +142,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Discharge overcurrent protection"
+  icon: mdi:current-dc
   address: 0x1200
   offset: 0x00A2
   register_type: holding
@@ -137,6 +151,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Discharge short circuit protection"
+  icon: mdi:flash-triangle
   address: 0x1200
   offset: 0x00A2
   register_type: holding
@@ -145,6 +160,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Discharge over-temperature protection"
+  icon: mdi:thermometer-alert
   address: 0x1200
   offset: 0x00A2
   register_type: holding
@@ -153,6 +169,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Charging tube abnormality"
+  icon: mdi:alert-octagon-outline
   address: 0x1200
   offset: 0x00A0
   register_type: holding
@@ -161,6 +178,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Discharge tube abnormality"
+  icon: mdi:alert-octagon-outline
   address: 0x1200
   offset: 0x00A0
   register_type: holding
@@ -169,6 +187,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} GPS disconnected"
+  icon: mdi:crosshairs-gps
   address: 0x1200
   offset: 0x00A0
   register_type: holding
@@ -177,6 +196,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Please modify the authorization password in time"
+  icon: mdi:lock-alert
   address: 0x1200
   offset: 0x00A0
   register_type: holding
@@ -193,6 +213,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery over-temperature alarm"
+  icon: mdi:thermometer-alert
   address: 0x1200
   offset: 0x00A0
   register_type: holding
@@ -201,6 +222,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Temperature sensor abnormality"
+  icon: mdi:thermometer-off
   address: 0x1200
   offset: 0x00A0
   register_type: holding

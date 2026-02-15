@@ -1,5 +1,6 @@
 - platform: template
   name: "${name} total runtime formatted"
+  icon: mdi:clock-outline
   update_interval: 60s
 # device_class: timestamp
   lambda: |-

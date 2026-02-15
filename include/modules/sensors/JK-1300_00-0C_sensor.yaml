@@ -2,6 +2,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} RTC counter"
+  icon: mdi:clock-outline
   # address: 0x1300
   # address: 0x1200
   # offset: 0x0100
@@ -21,6 +22,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Sleep time"
+  icon: mdi:sleep
   # address: 0x1308
   # address: 0x1200
   # offset: 0x0108
@@ -39,6 +41,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Parallel current limiting module status"     # 
+  icon: mdi:information-outline
   # address: 0x130C
   # address: 0x1200
   # offset: 0x010C

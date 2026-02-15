@@ -150,6 +150,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell voltage 1"
+  icon: mdi:flash
   address: 0x1200
   register_type: holding
   value_type: U_WORD
@@ -168,6 +169,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell voltage 2"
+  icon: mdi:flash
   address: 0x1200
   offset: 0x0002
   register_type: holding
@@ -183,6 +185,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell voltage 3"
+  icon: mdi:flash
   address: 0x1200
   offset: 0x0004
   register_type: holding
@@ -198,6 +201,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell voltage 4"
+  icon: mdi:flash
   address: 0x1200
   offset: 0x0006
   register_type: holding
@@ -213,6 +217,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell voltage 5"
+  icon: mdi:flash
   address: 0x1200
   offset: 0x0008
   register_type: holding
@@ -228,6 +233,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell voltage 6"
+  icon: mdi:flash
   address: 0x1200
   offset: 0x000A
   register_type: holding
@@ -243,6 +249,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell voltage 7"
+  icon: mdi:flash
   address: 0x1200
   offset: 0x000C
   register_type: holding
@@ -258,6 +265,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell voltage 8"
+  icon: mdi:flash
   address: 0x1200
   offset: 0x000E
   register_type: holding
@@ -273,6 +281,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell voltage 9"
+  icon: mdi:flash
   address: 0x1200
   offset: 0x0010
   register_type: holding
@@ -288,6 +297,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell voltage 10"
+  icon: mdi:flash
   address: 0x1200
   offset: 0x0012
   register_type: holding
@@ -303,6 +313,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell voltage 11"
+  icon: mdi:flash
   address: 0x1200
   offset: 0x0014
   register_type: holding
@@ -318,6 +329,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell voltage 12"
+  icon: mdi:flash
   address: 0x1200
   offset: 0x0016
   register_type: holding
@@ -333,6 +345,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell voltage 13"
+  icon: mdi:flash
   address: 0x1200
   offset: 0x0018
   register_type: holding
@@ -348,6 +361,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell voltage 14"
+  icon: mdi:flash
   address: 0x1200
   offset: 0x001A
   register_type: holding
@@ -363,6 +377,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell voltage 15"
+  icon: mdi:flash
   address: 0x1200
   offset: 0x001C
   register_type: holding
@@ -378,6 +393,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell voltage 16"
+  icon: mdi:flash
   address: 0x1200
   offset: 0x001E
   register_type: holding
@@ -633,6 +649,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery status"
+  icon: mdi:information-outline
   id: CellSta
   address: 0x1200
   offset: 0x0040
@@ -650,6 +667,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Cell average voltage"
+  icon: mdi:flash
   id: CellVolAve
   address: 0x1200
   offset: 0x0044
@@ -667,6 +685,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Maximum voltage difference"  # CellVdifMax
+  icon: mdi:flash
   address: 0x1200
   offset: 0x0046
   register_type: holding
@@ -684,6 +703,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} max voltage cell number"
+  icon: mdi:counter
   address: 0x1200
   offset: 0x0048
   register_type: holding
@@ -698,6 +718,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} min voltage cell number"
+  icon: mdi:counter
   address: 0x1200
   offset: 0x0048
   register_type: holding
@@ -713,6 +734,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell 1 wire resistance"
+  icon: mdi:omega
   address: 0x1200
   offset: 0x004A
   register_type: holding
@@ -727,6 +749,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell 2 wire resistance"
+  icon: mdi:omega
   address: 0x1200
   offset: 0x004C
   register_type: holding
@@ -741,6 +764,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell 3 wire resistance"
+  icon: mdi:omega
   address: 0x1200
   offset: 0x004E
   register_type: holding
@@ -755,6 +779,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell 4 wire resistance"
+  icon: mdi:omega
   address: 0x1200
   offset: 0x0050
   register_type: holding
@@ -769,6 +794,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell 5 wire resistance"
+  icon: mdi:omega
   address: 0x1200
   offset: 0x0052
   register_type: holding
@@ -783,6 +809,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell 6 wire resistance"
+  icon: mdi:omega
   address: 0x1200
   offset: 0x0054
   register_type: holding
@@ -797,6 +824,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell 7 wire resistance"
+  icon: mdi:omega
   address: 0x1200
   offset: 0x0056
   register_type: holding
@@ -811,6 +839,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell 8 wire resistance"
+  icon: mdi:omega
   address: 0x1200
   offset: 0x0058
   register_type: holding
@@ -825,6 +854,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell 9 wire resistance"
+  icon: mdi:omega
   address: 0x1200
   offset: 0x005A
   register_type: holding
@@ -839,6 +869,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell 10 wire resistance"
+  icon: mdi:omega
   address: 0x1200
   offset: 0x005C
   register_type: holding
@@ -853,6 +884,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell 11 wire resistance"
+  icon: mdi:omega
   address: 0x1200
   offset: 0x005E
   register_type: holding
@@ -867,6 +899,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell 12 wire resistance"
+  icon: mdi:omega
   address: 0x1200
   offset: 0x0060
   register_type: holding
@@ -881,6 +914,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell 13 wire resistance"
+  icon: mdi:omega
   address: 0x1200
   offset: 0x0062
   register_type: holding
@@ -895,6 +929,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell 14 wire resistance"
+  icon: mdi:omega
   address: 0x1200
   offset: 0x0064
   register_type: holding
@@ -909,6 +944,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell 15 wire resistance"
+  icon: mdi:omega
   address: 0x1200
   offset: 0x0066
   register_type: holding
@@ -923,6 +959,7 @@
 - platform: modbus_controller
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} cell 16 wire resistance"
+  icon: mdi:omega
   address: 0x1200
   offset: 0x0068
   register_type: holding
