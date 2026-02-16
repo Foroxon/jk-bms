@@ -86,40 +86,6 @@
 
     #    0x0100  256 UINT32  4   RW  Connection line internal resistance 30              CellConWireRes30    uΩ
     #    0x0104  260 UINT32  4   RW  Connection line internal resistance 31              CellConWireRes31    uΩ
-- platform: modbus_controller
-  modbus_controller_id: ${modbus_contr_id}
-  name: "${name} Connection line resistance 31"      # CellConWireRes30
-  icon: mdi:omega
-  # id: CellConWireRes30
-  address: 0x1100
-  # address: 0x1100
-  # offset: 0x0000
-  # register_count: 0x1A
-  # response_size: 0x34
-  register_type: holding
-  value_type: U_DWORD
-  use_write_multiple: true
-  # skip_updates: 10
-  unit_of_measurement: "mΩ"
-  multiply: 1000
-  step: 0.001
-
-
-- platform: modbus_controller
-  modbus_controller_id: ${modbus_contr_id}
-  name: "${name} Connection line resistance 32"      # CellConWireRes31
-  icon: mdi:omega
-  # id: CellConWireRes31
-  address: 0x1104
-  # address: 0x1100
-  # offset: 0x0004
-  register_type: holding
-  value_type: U_DWORD
-  use_write_multiple: true
-  # skip_updates: 10
-  unit_of_measurement: "mΩ"
-  multiply: 1000
-  step: 0.001
 
   #    0x0108  264 UINT32  4   RW  Device address                                      DevAddr H
 - platform: modbus_controller
