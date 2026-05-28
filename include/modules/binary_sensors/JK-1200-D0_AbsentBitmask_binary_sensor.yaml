@@ -12,8 +12,9 @@
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} MOS temperature sensor Absent"
   icon: mdi:thermometer-off
-  address: 0x1200
-  offset: 0x00D0
+  address: 0x128A
+  offset: 0x0046
+
   register_type: holding
   bitmask: 0x0100
 
@@ -21,8 +22,9 @@
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery temperature sensor 1 Absent"
   icon: mdi:thermometer-off
-  address: 0x1200
-  offset: 0x00D0
+  address: 0x128A
+  offset: 0x0046
+
   register_type: holding
   bitmask: 0x0200
 
@@ -30,8 +32,9 @@
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery temperature sensor 2 Absent"
   icon: mdi:thermometer-off
-  address: 0x1200
-  offset: 0x00D0
+  address: 0x128A
+  offset: 0x0046
+
   register_type: holding
   bitmask: 0x0400
 
@@ -39,8 +42,9 @@
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery temperature sensor 3 Absent"
   icon: mdi:thermometer-off
-  address: 0x1200
-  offset: 0x00D0
+  address: 0x128A
+  offset: 0x0046
+
   register_type: holding
   bitmask: 0x0800
 
@@ -48,8 +52,9 @@
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery temperature sensor 4 Absent"
   icon: mdi:thermometer-off
-  address: 0x1200
-  offset: 0x00D0
+  address: 0x128A
+  offset: 0x0046
+
   register_type: holding
   bitmask: 0x1000
 
@@ -57,8 +62,9 @@
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Battery temperature sensor 5 Absent"
   icon: mdi:thermometer-off
-  address: 0x1200
-  offset: 0x00D0
+  address: 0x128A
+  offset: 0x0046
+
   register_type: holding
   bitmask: 0x2000
 
@@ -66,8 +72,9 @@
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Heating status"
   icon: mdi:radiator
-  address: 0x1200
-  offset: 0x00D0
+  address: 0x128A
+  offset: 0x0046
+
   register_type: holding
   bitmask: 0x4000
 

@@ -27,8 +27,9 @@
   name: "${name} Balance line resistance is too large"
   id: alarm_wire_res
   icon: mdi:omega
-  address: 0x1200
-  offset: 0x00A2
+  address: 0x128A
+  offset: 0x0018
+
   register_type: holding
   bitmask: 0x0001
 
@@ -37,8 +38,9 @@
   name: "${name} MOS over temperature protection"
   id: alarm_mos_otp
   icon: mdi:thermometer-alert
-  address: 0x1200
-  offset: 0x00A2
+  address: 0x128A
+  offset: 0x0018
+
   register_type: holding
   bitmask: 0x0002
 
@@ -47,8 +49,9 @@
   name: "${name} The number of cells does not match the set value"
   id: alarm_cell_quantity
   icon: mdi:counter
-  address: 0x1200
-  offset: 0x00A2
+  address: 0x128A
+  offset: 0x0018
+
   register_type: holding
   bitmask: 0x0004
 
@@ -57,8 +60,9 @@
   name: "${name} Current sensor abnormality"
   id: alarm_cur_sensor_err
   icon: mdi:current-dc
-  address: 0x1200
-  offset: 0x00A2
+  address: 0x128A
+  offset: 0x0018
+
   register_type: holding
   bitmask: 0x0008
 
@@ -67,8 +71,9 @@
   name: "${name} Single cell overvoltage protection"
   id: alarm_cell_ovp
   icon: mdi:flash-alert
-  address: 0x1200
-  offset: 0x00A2
+  address: 0x128A
+  offset: 0x0018
+
   register_type: holding
   bitmask: 0x0010
 
@@ -77,8 +82,9 @@
   name: "${name} Battery overvoltage protection"
   id: alarm_bat_ovp
   icon: mdi:flash-alert
-  address: 0x1200
-  offset: 0x00A2
+  address: 0x128A
+  offset: 0x0018
+
   register_type: holding
   bitmask: 0x0020
 
@@ -87,8 +93,9 @@
   name: "${name} Charging overcurrent protection"
   id: alarm_ch_ocp
   icon: mdi:current-dc
-  address: 0x1200
-  offset: 0x00A2
+  address: 0x128A
+  offset: 0x0018
+
   register_type: holding
   bitmask: 0x0040
 
@@ -97,8 +104,9 @@
   name: "${name} Charging short circuit protection"
   id: alarm_ch_scp
   icon: mdi:flash-triangle
-  address: 0x1200
-  offset: 0x00A2
+  address: 0x128A
+  offset: 0x0018
+
   register_type: holding
   bitmask: 0x0080
 
@@ -107,8 +115,9 @@
   name: "${name} Charging over-temperature protection"
   id: alarm_ch_otp
   icon: mdi:thermometer-alert
-  address: 0x1200
-  offset: 0x00A2
+  address: 0x128A
+  offset: 0x0018
+
   register_type: holding
   bitmask: 0x0100
 
@@ -117,8 +126,9 @@
   name: "${name} Charging low temperature protection"
   id: alarm_ch_utp
   icon: mdi:snowflake-alert
-  address: 0x1200
-  offset: 0x00A2
+  address: 0x128A
+  offset: 0x0018
+
   register_type: holding
   bitmask: 0x0200
 
@@ -127,8 +137,9 @@
   name: "${name} Internal communication abnormality"
   id: alarm_cpu_aux_commu_err
   icon: mdi:alert-circle-outline
-  address: 0x1200
-  offset: 0x00A2
+  address: 0x128A
+  offset: 0x0018
+
   register_type: holding
   bitmask: 0x0400
 
@@ -137,8 +148,9 @@
   name: "${name} Cell undervoltage protection"
   id: alarm_cell_uvp
   icon: mdi:flash-alert
-  address: 0x1200
-  offset: 0x00A2
+  address: 0x128A
+  offset: 0x0018
+
   register_type: holding
   bitmask: 0x0800
 
@@ -147,8 +159,9 @@
   name: "${name} Battery undervoltage protection"
   id: alarm_bat_uvp
   icon: mdi:flash-alert
-  address: 0x1200
-  offset: 0x00A2
+  address: 0x128A
+  offset: 0x0018
+
   register_type: holding
   bitmask: 0x1000
 
@@ -157,8 +170,9 @@
   name: "${name} Discharge overcurrent protection"
   id: alarm_dch_ocp
   icon: mdi:current-dc
-  address: 0x1200
-  offset: 0x00A2
+  address: 0x128A
+  offset: 0x0018
+
   register_type: holding
   bitmask: 0x2000
 
@@ -167,8 +181,9 @@
   name: "${name} Discharge short circuit protection"
   id: alarm_dch_scp
   icon: mdi:flash-triangle
-  address: 0x1200
-  offset: 0x00A2
+  address: 0x128A
+  offset: 0x0018
+
   register_type: holding
   bitmask: 0x4000
 
@@ -177,8 +192,9 @@
   name: "${name} Discharge over-temperature protection"
   id: alarm_dch_otp
   icon: mdi:thermometer-alert
-  address: 0x1200
-  offset: 0x00A2
+  address: 0x128A
+  offset: 0x0018
+
   register_type: holding
   bitmask: 0x8000
 
@@ -187,8 +203,9 @@
   name: "${name} Charging tube abnormality"
   id: alarm_charge_mos
   icon: mdi:alert-octagon-outline
-  address: 0x1200
-  offset: 0x00A0
+  address: 0x128A
+  offset: 0x0016
+
   register_type: holding
   bitmask: 0x0001
 
@@ -197,8 +214,9 @@
   name: "${name} Discharge tube abnormality"
   id: alarm_discharge_mos
   icon: mdi:alert-octagon-outline
-  address: 0x1200
-  offset: 0x00A0
+  address: 0x128A
+  offset: 0x0016
+
   register_type: holding
   bitmask: 0x0002
 
@@ -207,8 +225,9 @@
   name: "${name} GPS disconnected"
   id: alarm_gps_disconnected
   icon: mdi:crosshairs-gps
-  address: 0x1200
-  offset: 0x00A0
+  address: 0x128A
+  offset: 0x0016
+
   register_type: holding
   bitmask: 0x0004
 
@@ -217,8 +236,9 @@
   name: "${name} Please modify the authorization password in time"
   id: alarm_modify_pwd
   icon: mdi:lock-alert
-  address: 0x1200
-  offset: 0x00A0
+  address: 0x128A
+  offset: 0x0016
+
   register_type: holding
   bitmask: 0x0008
 
@@ -235,8 +255,9 @@
   name: "${name} Battery over-temperature alarm"
   id: alarm_bat_over_temp
   icon: mdi:thermometer-alert
-  address: 0x1200
-  offset: 0x00A0
+  address: 0x128A
+  offset: 0x0016
+
   register_type: holding
   bitmask: 0x0020
 
@@ -245,8 +266,9 @@
   name: "${name} Temperature sensor abnormality"
   id: alarm_temp_sensor
   icon: mdi:thermometer-off
-  address: 0x1200
-  offset: 0x00A0
+  address: 0x128A
+  offset: 0x0016
+
   register_type: holding
   bitmask: 0x0040
 
