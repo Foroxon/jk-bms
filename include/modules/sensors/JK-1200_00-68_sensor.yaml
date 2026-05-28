@@ -156,8 +156,8 @@
   value_type: U_WORD
   # register_count: 70  # read up to CellVol31
   # response_size: 140
-  register_count: 0x6A  # read up to CellVol15
-  response_size: 0xD4
+  register_count: 0x35  # 16 cell voltages + 16 wire resistances (to offset 0x0068)
+  response_size: 0x6A
   unit_of_measurement: "V"
   device_class: voltage
   state_class: measurement
