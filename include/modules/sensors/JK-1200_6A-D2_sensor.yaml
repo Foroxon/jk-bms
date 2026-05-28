@@ -230,8 +230,10 @@
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} mosfet temperature"
   icon: mdi:thermometer
-  address: 0x1200
-  offset: 0x008A
+  address: 0x128A
+  offset: 0x0000
+  register_count: 0x24
+  response_size: 0x48
   register_type: holding
   value_type: S_WORD
   unit_of_measurement: "°C"
@@ -248,8 +250,8 @@
   name: "${name} Balance line resistance status"   # CellWireResSta
   icon: mdi:information-outline
   # address: 0x128C
-  address: 0x1200
-  offset: 0x008C
+  address: 0x128A
+  offset: 0x0002
   register_type: holding
   value_type: U_DWORD
 # device_class: enum
@@ -262,8 +264,8 @@
   name: "${name} Total battery voltage"   # BatVol
   icon: mdi:flash
   # address: 0x1290
-  address: 0x1200
-  offset: 0x0090
+  address: 0x128A
+  offset: 0x0006
   register_type: holding
   value_type: U_DWORD
   unit_of_measurement: "V"
@@ -280,8 +282,8 @@
   name: "${name} Battery power"   # BatWatt
   icon: mdi:flash-outline
   # address: 0x1294
-  address: 0x1200
-  offset: 0x0094
+  address: 0x128A
+  offset: 0x000A
   register_type: holding
   value_type: U_DWORD
   unit_of_measurement: "W"
@@ -298,8 +300,8 @@
   name: "${name} Battery current"   # BatCurrent
   icon: mdi:current-dc
   # address: 0x1298
-  address: 0x1200
-  offset: 0x0098
+  address: 0x128A
+  offset: 0x000E
   register_type: holding
   value_type: S_DWORD
   unit_of_measurement: "A"
@@ -318,8 +320,8 @@
   name: "${name} Battery temperature 1"   # TempBat1
   icon: mdi:thermometer
   # address: 0x129C
-  address: 0x1200
-  offset: 0x009C
+  address: 0x128A
+  offset: 0x0012
   register_type: holding
   value_type: S_WORD
   unit_of_measurement: "°C"
@@ -334,8 +336,8 @@
   name: "${name} Battery temperature 2"   # TempBat1
   icon: mdi:thermometer
   # address: 0x129E
-  address: 0x1200
-  offset: 0x009E
+  address: 0x128A
+  offset: 0x0014
   register_type: holding
   value_type: S_WORD
   unit_of_measurement: "°C"
@@ -374,8 +376,8 @@
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} AlarmBitmask"
   icon: mdi:alert-circle-outline
-  address: 0x1200
-  offset: 0x00A0
+  address: 0x128A
+  offset: 0x0016
   register_type: holding
   value_type: U_DWORD
 
@@ -386,8 +388,8 @@
   name: "${name} Balancing current"   # BalanCurrent
   icon: mdi:current-dc
   # address: 0x12A4
-  address: 0x1200
-  offset: 0x00A4
+  address: 0x128A
+  offset: 0x001A
   register_type: holding
   value_type: S_WORD
   unit_of_measurement: "A"
@@ -407,8 +409,8 @@
   name: "${name} Balancing state"     # BalanSta
   icon: mdi:scale-balance
   # address: 0x12A6
-  address: 0x1200
-  offset: 0x00A6
+  address: 0x128A
+  offset: 0x001C
   register_type: holding
   value_type: U_WORD
   unit_of_measurement: ""
@@ -424,8 +426,8 @@
   name: "${name} State of Charge"    # SOCStateOfcharge
   icon: mdi:battery-70
   # address: 0x12A6
-  address: 0x1200
-  offset: 0x00A6
+  address: 0x128A
+  offset: 0x001C
   register_type: holding
   value_type: U_WORD
   unit_of_measurement: "%"
@@ -444,8 +446,8 @@
   name: "${name} Remaining capacity"     # SOCCapRemain
   icon: mdi:battery-charging
   # address: 0x12A8
-  address: 0x1200
-  offset: 0x00A8
+  address: 0x128A
+  offset: 0x001E
   register_type: holding
   value_type: U_DWORD
   unit_of_measurement: "Ah"
@@ -462,8 +464,8 @@
   name: "${name} Actual battery capacity"     # SOCFullChargeCap
   icon: mdi:battery-charging
   # address: 0x12AC
-  address: 0x1200
-  offset: 0x00AC
+  address: 0x128A
+  offset: 0x0022
   register_type: holding
   value_type: U_DWORD
   unit_of_measurement: "Ah"
@@ -480,8 +482,8 @@
   name: "${name} Number of cycles"        # SOCCycleCount
   icon: mdi:counter
   # address: 0x12B0
-  address: 0x1200
-  offset: 0x00B0
+  address: 0x128A
+  offset: 0x0026
   register_type: holding
   value_type: U_DWORD
   state_class: measurement
@@ -494,8 +496,8 @@
   name: "${name} Total cycle capacity"     # SOCCycleCap
   icon: mdi:battery-charging
   # address: 0x12B4
-  address: 0x1200
-  offset: 0x00B4
+  address: 0x128A
+  offset: 0x002A
   register_type: holding
   value_type: U_DWORD
   unit_of_measurement: "Ah"
@@ -514,8 +516,8 @@
   name: "${name} SOH estimate"        # SOCSOH
   icon: mdi:battery-heart-variant
   # address: 0x12B8
-  address: 0x1200
-  offset: 0x00B8
+  address: 0x128A
+  offset: 0x002E
   register_type: holding
   value_type: U_WORD
   unit_of_measurement: "%"
@@ -530,8 +532,8 @@
   name: "${name} Pre-charge status"    # Precharge   1: open; 0: close
   icon: mdi:battery-charging-outline
   # address: 0x12B8
-  address: 0x1200
-  offset: 0x00B8
+  address: 0x128A
+  offset: 0x002E
   register_type: holding
   value_type: U_WORD
   unit_of_measurement: ""
@@ -549,8 +551,8 @@
   name: "${name} User layer alarm"     # UserAlarm
   icon: mdi:alert-circle-outline
   # address: 0x12BA
-  address: 0x1200
-  offset: 0x00BA
+  address: 0x128A
+  offset: 0x0030
   register_type: holding
   value_type: U_WORD
   unit_of_measurement: ""
@@ -562,8 +564,8 @@
   name: "${name} total runtime in seconds"
   icon: mdi:clock-outline
   # address: 0x12BC
-  address: 0x1200
-  offset: 0x00BC
+  address: 0x128A
+  offset: 0x0032
   register_type: holding
   value_type: U_DWORD
 # device_class: timestamp
@@ -581,8 +583,8 @@
   name: "${name} Charge status"     # Charge
   icon: mdi:battery-charging-wireless
   # address: 0x12C0
-  address: 0x1200
-  offset: 0x00C0
+  address: 0x128A
+  offset: 0x0036
   register_type: holding
   value_type: U_WORD
   unit_of_measurement: ""
@@ -597,8 +599,8 @@
   name: "${name} Discharge status"    # Discharge
   icon: mdi:battery-minus
   # address: 0x12C0
-  address: 0x1200
-  offset: 0x00C0
+  address: 0x128A
+  offset: 0x0036
   register_type: holding
   value_type: U_WORD
   unit_of_measurement: ""
@@ -616,8 +618,8 @@
   name: "${name} User layer alarm 2"     # UserAlarm
   icon: mdi:alert-circle-outline
   # address: 0x12C2
-  address: 0x1200
-  offset: 0x00C2
+  address: 0x128A
+  offset: 0x0038
   register_type: holding
   value_type: U_WORD
   unit_of_measurement: ""
@@ -630,8 +632,8 @@
   name: "${name} Discharge overcurrent protection release time"     # TimeDcOCPR
   icon: mdi:clock-outline
   # address: 0x12CC
-  address: 0x1200
-  offset: 0x00CC
+  address: 0x128A
+  offset: 0x0042
   register_type: holding
   value_type: U_WORD
   unit_of_measurement: "s"
@@ -644,8 +646,8 @@
   name: "${name} Discharge short circuit protection release time"     # TimeDcSCPR
   icon: mdi:clock-outline
   # address: 0x12CC
-  address: 0x1200
-  offset: 0x00CC
+  address: 0x128A
+  offset: 0x0042
   register_type: holding
   value_type: U_WORD
   unit_of_measurement: "s"
@@ -658,8 +660,8 @@
   name: "${name} Charging overcurrent protection release time"     # TimeCOCPR
   icon: mdi:clock-outline
   # address: 0x12C8
-  address: 0x1200
-  offset: 0x00C8
+  address: 0x128A
+  offset: 0x003E
   register_type: holding
   value_type: U_WORD
   unit_of_measurement: "s"
@@ -672,8 +674,8 @@
   name: "${name} Charging short circuit protection release time"     # TimeCSCPR
   icon: mdi:clock-outline
   # address: 0x12CA
-  address: 0x1200
-  offset: 0x00CA
+  address: 0x128A
+  offset: 0x0040
   register_type: holding
   value_type: U_WORD
   unit_of_measurement: "s"
@@ -686,8 +688,8 @@
   name: "${name} Single undervoltage protection release time"     # TimeUVPR
   icon: mdi:clock-outline
   # address: 0x12CC
-  address: 0x1200
-  offset: 0x00CC
+  address: 0x128A
+  offset: 0x0042
   register_type: holding
   value_type: U_WORD
   unit_of_measurement: "s"
@@ -700,8 +702,8 @@
   name: "${name} Single overvoltage protection release time"     # TimeOVPR
   icon: mdi:clock-outline
   # address: 0x12CE
-  address: 0x1200
-  offset: 0x00CE
+  address: 0x128A
+  offset: 0x0044
   register_type: holding
   value_type: U_WORD
   unit_of_measurement: "s"
@@ -720,8 +722,8 @@
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} AbsentBitmask"
   icon: mdi:information-outline
-  address: 0x1200
-  offset: 0x00D0
+  address: 0x128A
+  offset: 0x0046
   register_type: holding
   value_type: U_WORD
   bitmask: 0xFF00
