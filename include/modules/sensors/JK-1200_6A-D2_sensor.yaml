@@ -631,9 +631,9 @@
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Discharge overcurrent protection release time"     # TimeDcOCPR
   icon: mdi:clock-outline
-  # address: 0x12CC
+  # address: 0x12C4
   address: 0x128A
-  offset: 0x0042
+  offset: 0x003A
   register_type: holding
   value_type: U_WORD
   unit_of_measurement: "s"
@@ -645,9 +645,9 @@
   modbus_controller_id: ${modbus_contr_id}
   name: "${name} Discharge short circuit protection release time"     # TimeDcSCPR
   icon: mdi:clock-outline
-  # address: 0x12CC
+  # address: 0x12C6
   address: 0x128A
-  offset: 0x0042
+  offset: 0x003C
   register_type: holding
   value_type: U_WORD
   unit_of_measurement: "s"

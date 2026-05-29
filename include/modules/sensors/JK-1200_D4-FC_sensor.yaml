@@ -225,8 +225,6 @@
   name: "${name} Battery temperature 5"   # TempBat5
   icon: mdi:thermometer
   # address: 0x12FC
-  # address: 0x1200
-  # offset: 0x00FC
   address: 0x12D4
   offset: 0x0028
   register_type: holding
@@ -237,3 +235,48 @@
   accuracy_decimals: 1
   filters:
     - multiply: 0.1
+
+# 0x1300   256   UINT32    4    R    RTCTicks  (counts from 2020-01-01)
+  #    0x0100  256 UINT32  4   R   RTC counter                                         RTCTicks
+- platform: modbus_controller
+  modbus_controller_id: ${modbus_contr_id}
+  name: "${name} RTC ticks"   # RTCTicks
+  icon: mdi:clock-outline
+  # address: 0x1300
+  address: 0x12D4
+  offset: 0x002C
+  register_type: holding
+  value_type: U_DWORD
+  state_class: measurement
+  unit_of_measurement: "s"
+  accuracy_decimals: 0
+
+# 0x1308   264   UINT32    4    R    TimeEnterSleep  S
+  #    0x0108  264 UINT32  4   R   Sleep time                                          TimeEnterSleep      S
+- platform: modbus_controller
+  modbus_controller_id: ${modbus_contr_id}
+  name: "${name} Time enter sleep"   # TimeEnterSleep
+  icon: mdi:sleep
+  # address: 0x1308
+  address: 0x12D4
+  offset: 0x0034
+  register_type: holding
+  value_type: U_DWORD
+  state_class: measurement
+  unit_of_measurement: "s"
+  accuracy_decimals: 0
+
+# 0x130C   268   UINT8+UINT8 2  R    PCLModuleSta (1:open; 0:close) / Reserved
+  #    0x010C  268 UINT8   2   R   Parallel current limiting module status             PCLModuleSta            1: open; 0: close
+- platform: modbus_controller
+  modbus_controller_id: ${modbus_contr_id}
+  name: "${name} PCL module status"   # PCLModuleSta
+  icon: mdi:electric-switch
+  # address: 0x130C
+  address: 0x12D4
+  offset: 0x0038
+  register_type: holding
+  value_type: U_WORD
+  state_class: measurement
+  accuracy_decimals: 0
+  bitmask: 0xFF00
